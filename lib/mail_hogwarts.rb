@@ -2,11 +2,12 @@ require 'rest-client'
 require 'json'
 require 'base64'
 require 'yaml'
+require 'nokogiri'
 
 require_relative 'mailhogwarts/version'
 require_relative 'mailhogwarts/mailer'
 require_relative 'mailhogwarts/messages'
-require_relative 'mailhogwarts/message'
+require_relative 'mailhogwarts/message/message'
 require_relative 'mailhogwarts/search'
 
 module MailHogwarts

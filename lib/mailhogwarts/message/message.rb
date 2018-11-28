@@ -1,3 +1,5 @@
+require_relative 'body'
+
 module MailHogwarts
   class Message
     include Comparable
@@ -5,6 +7,7 @@ module MailHogwarts
 
     def initialize(fields)
       @message = fields
+      @message[:body] = Body.new(@message[:body])
 
       @message.keys.each do |key|
         define_singleton_method(key.to_s) do
@@ -17,7 +20,7 @@ module MailHogwarts
       @message.keys
     end
 
-    alias_method :fields, :keys
+    alias fields keys
 
     def <=>(other)
       created_at.to_i <=> other.created_at.to_i
