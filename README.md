@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/KirillFurtikov/MailHogwarts.svg?branch=master)](https://travis-ci.org/KirillFurtikov/MailHogwarts)
+[![Gem Version](https://badge.fury.io/rb/mailhogwarts.svg)](https://badge.fury.io/rb/mailhogwarts)
 
 # MailHogwarts
 
